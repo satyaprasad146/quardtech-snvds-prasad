@@ -1,0 +1,48 @@
+POST http://localhost:3000/login
+Content-Type:application/json
+
+{
+    "user_name":"prasad",
+    "user_password":"quardbtech"
+    }
+
+
+####
+GET http://localhost:3000/details/be27001b-1a44-49f6-98d9-6ffea1445ae2
+
+
+###
+POST http://localhost:3000/insert
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJwcmFzYWQiLCJpYXQiOjE2OTQ4NzEyNjh9.8L19UAVEXeLEIkqTwDML0FdsLBOLnh6gU22KiHYaR9I
+
+{
+    "user_id":"4",
+    "user_name":"brother",
+    "user_email":"brother@gmail.com",
+    "user_password":"quardbtech",
+    "user_image":"brother.jpg",
+    "total_orders":30,
+    "created_at":"CURRENT_TIMESTAMP",
+    "last_logged_in":"CURRENT_TIMESTAMP"
+}
+###
+PUT http://localhost:3000/update/190810c2-c638-4a9a-8857-e033a10909d5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJwcmFzYWQiLCJpYXQiOjE2OTQ4NzkyNDB9.pKVTSnQzIaJBb0NLtnjqBZALSTpw57gRTKZCuN3bo7E 
+
+{
+    "user_name":"son",
+    "user_email":"son@gmail.com",
+    "user_password":"son",
+    "user_image":"son.jpg",
+    "total_orders":25,
+    "created_at":"2023-09-16T16:49:47.679Z",
+    "last_logged_in":"2023-09-16T16:49:47.679Z"
+}
+
+####
+GET http://localhost:3000/image/be27001b-1a44-49f6-98d9-6ffea1445ae2
+
+####
+DELETE http://localhost:3000/delete/41adbacc-ac43-4b92-96f5-7751b6bb0daf
